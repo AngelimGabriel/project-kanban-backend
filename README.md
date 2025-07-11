@@ -39,11 +39,11 @@ cd project-kanban-backend
 - Execute `npm install` para instalar as dependências.
 - Crie um arquivo `.env` na raiz do projeto
 - Adicione as seguintes váriaveis de ambiente:
-  1. DB_HOST={`localhost` ou, caso tenha utilizado `--host {SEU_IP}` no package.json, coloque o IP do host}
-  2. DB_PORT={Porta usada pelo seu PostgreSQL}
-  3. DB_USERNAME={nome de usuário do banco de dados}
-  4. DB_PASSWORD={senha do banco de dados}
-  5. DB_NAME={nome do banco de dados}
+  1. DB_HOST=localhost
+  2. DB_PORT=5432
+  3. DB_USERNAME=seu_usuario
+  4. DB_PASSWORD=sua_senha
+  5. DB_NAME=nome_do_banco
 - Crie uma tabela no seu banco de dados com a seguinte query:
 
   ```sql
