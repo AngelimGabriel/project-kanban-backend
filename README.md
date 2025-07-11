@@ -1,41 +1,46 @@
-# API KANBAN
+# API Kanban
 
-- Esse projeto visa na criação de uma API para a criação de tarefas no estilo KANBAN, com rotas bem definidas e validações de requisições.
+Este projeto tem como objetivo a criação de uma API REST para gerenciamento de tarefas no estilo Kanban, com rotas bem definidas e validações utilizando a biblioteca Celebrate.
 
-## Funcionalidade:
+## Funcionalidades
 
-- Criação de tarefa
-- Atualização de tarefas (pelo ID)
-- Consultas de tarefas (todas ou por ID)
-- Deletar tarefas (pelo ID)
+- Criar tarefa
+- Atualizar tarefa (por ID)
+- Consultar tarefas (todas ou por ID)
+- Deletar tarefa (por ID)
 
-## Tecnologias e linguagem utilizadas:
+## Tecnologias e Linguagens Utilizadas
 
-- Node.JS
-- Express.JS
+- Node.js
+- Express.js
 - TypeScript
-- PostegreSQL
+- PostgreSQL
 
-## Bibliotecas utilizadas:
+## Bibliotecas Utilizadas
 
 - TypeORM
-- Celebrate
+- Celebrate (validação com Joi)
 - dotenv
-- Joi
 
-## Dependências de desenvolvimento:
+## Dependências de Desenvolvimento
 
-- Prettier para a formatação do código
-- Nodemon para aplicar as mudanças no server online a medida que o projeto avança
+- Prettier (formatação de código)
+- Nodemon (reinício automático do servidor)
 
-# Como utilizar:
+## Como Utilizar
 
-- Clone o repositório `git clone https://github.com/AngelimGabriel/project-kanban-backend`
-- `cd project-kanban-backend`
-- Criei o arquivo `.env` na raiz do projeto
+- Clone o repositório:
+
+```bash
+git clone https://github.com/AngelimGabriel/project-kanban-backend
+cd project-kanban-backend
+```
+
+- Execute `npm install` para instalar as dependências.
+- Crie um arquivo `.env` na raiz do projeto
 - Adicione as seguintes váriaveis de ambiente:
   1. DB_HOST={`localhost` ou, caso tenha utilizado `--host {SEU_IP}` no package.json, coloque o IP do host}
-  2. DB_PORT={Porta na qual o seu postegre utiliza}
+  2. DB_PORT={Porta usada pelo seu PostgreSQL}
   3. DB_USERNAME={nome de usuário do banco de dados}
   4. DB_PASSWORD={senha do banco de dados}
   5. DB_NAME={nome do banco de dados}
@@ -59,5 +64,5 @@
     OWNER to postgres;
   ```
 
-- Rode `npm run dev`
+- Execute o comando `npm run dev` para iniciar o servidor em modo de desenvolvimento.
 - Para testes com o INSOMNIA utilize o arquivo `kanban-request.yaml` e utilize as requisições criadas para esse fim.
