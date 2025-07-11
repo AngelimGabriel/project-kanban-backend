@@ -38,7 +38,7 @@ cd project-kanban-backend
 
 - Execute `npm install` para instalar as dependências.
 - Crie um arquivo `.env` na raiz do projeto
-- Adicione as seguintes váriaveis de ambiente:
+- Adicione as seguintes váriaveis de ambiente no arquivo `.env`:
   1. DB_HOST=localhost
   2. DB_PORT=5432
   3. DB_USERNAME=seu_usuario
