@@ -1,0 +1,136 @@
+type: collection.insomnia.rest/5.0
+name: Kanban-request
+meta:
+  id: wrk_0d019e4810a1418e8f0cc3607d1b33a4
+  created: 1752169591515
+  modified: 1752185066426
+  description: ""
+collection:
+  - url: http://localhost:3000/tasks
+    name: CriarTask
+    meta:
+      id: req_98a2cb17db7f47c2a8a315d9e6c36ced
+      created: 1752169591615
+      modified: 1752184993061
+      isPrivate: false
+      description: ""
+      sortKey: -1752169591615
+    method: POST
+    body:
+      mimeType: application/json
+      text: '{"titulo":"Teste de integração"}'
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.2.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/tasks
+    name: BuscarTarefas
+    meta:
+      id: req_79dab147b6da4e9e92d29ec41c319dd6
+      created: 1752171212439
+      modified: 1752185012082
+      isPrivate: false
+      description: ""
+      sortKey: -1752171212439
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.2.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/tasks/e3f6176e-2e55-4132-831b-8b64b368f116
+    name: BuscarTarefaId
+    meta:
+      id: req_8e3f7a7626d14c6587a904130b8a113e
+      created: 1752172472480
+      modified: 1752185022818
+      isPrivate: false
+      description: ""
+      sortKey: -1752172472480
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.2.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/tasks/878d5b9b-dec6-413b-aabe-2d50aadd04fe
+    name: DeletarTarefa
+    meta:
+      id: req_01383795a46e4d30b20c5355a9462080
+      created: 1752182515120
+      modified: 1752185029794
+      isPrivate: false
+      description: ""
+      sortKey: -1752182515120
+    method: DELETE
+    headers:
+      - name: User-Agent
+        value: insomnia/11.2.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/tasks/e3f6176e-2e55-4132-831b-8b64b368f116
+    name: AtualizarTarefa
+    meta:
+      id: req_ddba51c638b541b1ab547c95fe4c3b17
+      created: 1752183218082
+      modified: 1752185035594
+      isPrivate: false
+      description: ""
+      sortKey: -1752183218082
+    method: PUT
+    body:
+      mimeType: application/json
+      text: '{"categoria": "Doing"}'
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.2.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_dc2a35d486de871ffd75e62ea97eb211e74238b1
+    created: 1752169591519
+    modified: 1752169591519
+environments:
+  name: Base Environment
+  meta:
+    id: env_dc2a35d486de871ffd75e62ea97eb211e74238b1
+    created: 1752169591517
+    modified: 1752169591517
+    isPrivate: false
